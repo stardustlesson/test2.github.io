@@ -1,0 +1,86 @@
+body {
+	background-color: #693099;
+	color: #000;
+}
+
+.content {
+	margin: 100px 8% 20px 8%;
+	width: 80%;
+	font-family: 'gotham_bold';
+	background-color: #fff;
+	padding: 5px 2% 20px 2%;
+	border-radius: 30px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 40px;
+	margin-top: 0px;
+	font-family: 'gotham_bold';
+}
+
+.next {
+	margin-left: 40%;
+	width: 60%;
+	height: 80px;
+	padding:  20px 5% 20px 5%;
+	text-align: center;
+	border: 2px solid #9B59B6;
+	background-color: #9B63CC;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12pt;
+	transition: 1.7s;
+	font-family: 'gotham_bold';
+}
+
+.content .next:hover {
+	margin-left: 35%;
+	width: 70%;
+	background-color: #693070;
+	transition: 1.7s;
+}
+
+.early {
+	margin-right: 40%;
+	width: 60%;
+	height: 80px;
+	padding:  20px 5% 20px 5%;
+	text-align: center;
+	border: 2px solid #9B59B6;
+	background-color: #9B63CC;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12pt;
+	transition: 1.7s;
+	font-family: 'gotham_bold';
+}
+
+.content .early:hover {
+	margin-left: -5%;
+	width: 70%;
+	background-color: #693070;
+	transition: 1.7s;
+}
+
+.buttonnextorearly td {
+	width: 50%;
+}
+
+.main {
+	width: 60%;
+	padding: 0px 20% 0px 20%;
+	font-family: 'gotham_light';
+}
+
+.main p {
+	font-family: 'gotham_bold';
+}

@@ -1,0 +1,238 @@
+/* !!! Начало основных стилей !!! */
+
+/* Отключение отступа */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#background {
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	left: 0px; 
+	top: 0px; 
+	z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+	width:100%;
+	height:100%;
+}
+
+/* Вся страница */
+.page {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+body {
+	background:;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-family: 'gotham_light';
+	font-size: 14px;
+}
+
+.footer {
+	background-color: purple;
+	color: #fff;
+	padding: 30px;
+	font-family: 'gotham_bold';
+	animation: animatedBg 5s linear infinite;
+
+}
+.footer {
+	margin-top: auto;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50	;
+	animation: animatedBg 5s linear infinite;
+	
+}
+.header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: purple;
+	z-index: 3;
+}
+.container {
+	max-width: 1180px;
+	margin: 0px auto;
+	padding:0px 10px;
+}
+.header__body {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+}
+.header__list li {
+	list-style: none;
+	margin: 0px 0px 0px 20px;
+}
+.header__list {
+	display: flex;
+	position: relative;
+	z-index: 3	;
+}
+.header__link {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-decoration: none;
+}
+	.header__logo {
+		flex: 0 0 60px;
+		border-radius: 50%;
+		overflow: hidden;
+		z-index: 3;
+	}
+	.header__logo img{
+		max-width: 100%;
+		display: block;
+	}
+	.content__text {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.content__text p {
+		margin: 0px 0px 20px 0px;
+		color: #fff;
+	}
+	.content {
+		padding: 100px 0px 0px 0px;
+	}
+	.content {
+		margin: 100px 8% 20px 8%;
+		width: 80%;
+		font-family: 'gotham_bold';
+		padding: 5px 2% 100px 2%;
+		border-radius: 30px;
+		border: 2px solid rgb(255, 255, 255, .5);
+		backdrop-filter: blur(15px);
+	}
+	.naft {
+		height: 500px;
+		right: -10;
+		display: flex;
+		margin-left:700px;
+		margin-top: -350px;
+	}
+	.button {
+		position: fixed;
+		margin-top: -150px;
+		cursor: pointer;
+		height: 240px;
+		}
+	@media (max-width:767px){
+		#background {
+			width: 0%; 
+			height: 0%; 
+			position: fixed; 
+			left: 0px; 
+			top: 0px; 
+			z-index: -1;
+		}
+		body {
+			background: url(../../../images/d.jpg);
+		}
+		.header__body {
+			height: 50px;
+			
+		}
+		.header__logo {
+			flex: 0 0 40px;
+		}
+		.header__burger {
+			position: relative;
+			width: 30px;
+			height: 20px;
+			z-index: 3;
+		}
+		.header__burger:before,
+		.header__burger:after{
+			content: '';
+			background-color: #fff;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			transition: all 0.3s ease 0s;	
+		}
+		.header__burger:before{
+			top: 0;
+		}
+		.header__burger:after{
+			bottom: 0;
+		}
+		.header__burger span{
+			position: absolute;
+			background-color: #fff;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			top: 9px;
+			transition: all 0.3s ease 0s;
+		}
+		.header__menu {
+			position: fixed;
+			top: -120%;
+			left: 0;
+			overflow: auto;
+			width: 100%;
+			height: 100%;
+			background-color: rgb(99, 21, 130,.8);
+			padding: 70px 10px 20px 10px;
+			transition: all 0.8s ease 0s;
+		}
+		.header__menu.active {
+			top: 0;
+			transition: all 0.8s ease 0s;	
+		}
+		.header__list {
+			display: block;
+		}
+		.header__list li {
+			margin: 0px 0px 20px 0px;
+		}
+		.header__burger.active:before {
+			transform:rotate(45deg);
+		 top: 9px;
+	 }
+	 .header__burger.active:after {
+		 transform:rotate(-45deg);
+		 bottom: 9px;
+	}
+	.header__burger.active span {
+		transform: scale(0);
+	}
+	.content {
+		padding: 70px 0px 0px 0px;
+	}
+	body.lock {
+		overflow: hidden;
+	}
+	.header__link {
+		color: #fff;
+	}
+	.button {
+		position: fixed;
+		margin-top: -130px;
+		cursor: pointer;
+		height: 180px;
+		margin-left: -15px;
+		}
+	}
+	
